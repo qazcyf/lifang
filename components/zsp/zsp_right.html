@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zoho CRM-任务、通话及活动</title>
+    <link rel="stylesheet" href="zsp_css/normalize.css">
+    <link rel="stylesheet" href="zsp_css/daohang.css">
+    <link rel="stylesheet" href="zsp_css/zsp_right.css">
+    <link rel="stylesheet" href="zsp_css/global.css">
+</head>
+
+<body>
+    <div class="box_centent">
+        <div class="centent_left">
+            <div class="span_fu" id="span_fu">
+                <span>所有的任务、通话及活动</span>
+            </div>
+            <span class="bianji">编辑</span>
+            <div class="xlcd" id="xlcd" style="display:none;">
+                <div class="CVSearchBox">
+                    <span class="suosuo"></span>
+                    <input type="text" style="background:none;outline:none;border:0px;height:30px;width: 4000px;">
+                </div>
+                <div class="cvlist">
+                    <p style="color:rgb(119,119,119);margin:3px;padding:0;font-size:13.5px;">分享给我的</p>
+                    <ul>
+                        <li>
+                            <span></span>
+                            所有的任务、通话及活动
+                        </li>
+                        <li>
+                            <span></span>
+                            所有电话
+                        </li>
+                        <li>
+                            <span></span>
+                            所有活动
+                        </li>
+                        <li>
+                            <span></span>
+                            所有任务
+                        </li>
+                        <li>
+                            <span></span>
+                            接听的通话
+                        </li>
+                        <li>
+                            <span></span>
+                            取消的通话
+                        </li>
+                        <li>
+                            <span></span>
+                            关闭任务、通话及活动
+                        </li>
+                        <li>
+                            <span></span>
+                            已关闭的任务
+                        </li>
+                        <li>
+                            <span></span>
+                            拨入通话
+                        </li>
+                        <li>
+                            <span></span>
+                            我的任务、通话及活动
+                        </li>
+                        <li>
+                            <span></span>
+                            我接听的通话
+                        </li>
+                        <li>
+                            <span></span>
+                            我的电话
+                        </li>
+                        <li>
+                            <span></span>
+                            我的取消的通话
+                        </li>
+                        <li>
+                            <span></span>
+                            我的活动
+                        </li>
+                        <li>
+                            <span></span>
+                            我的拨入通话
+                        </li>
+                        <li>
+                            <span></span>
+                            我的打开的任务、通话及活动
+                        </li>
+                        <li>
+                            <span></span>
+                            我的未关闭任务
+                        </li>
+                        <li>
+                            <span></span>
+                            我的拨出通话
+                        </li>
+                        <li>
+                            <span></span>
+                            我的逾期的通话
+                        </li>
+                        <li>
+                            <span></span>
+                            我的安排的通话
+                        </li>
+                        <li>
+                            <span></span>
+                            我的今天安排的通话
+                        </li>
+                        <li>
+                            <span></span>
+                            我今天的安排和逾期的通话
+                        </li>
+                        <li>
+                            <span></span>
+                            我的未接听的通话
+                        </li>
+                        <li>
+                            <span></span>
+                            未来一周 + 过期
+                        </li>
+                        <li>
+                            <span></span>
+                            打开任务、通话及活动
+                        </li>
+                        <li>
+                            <span></span>
+                            打开的活动
+                        </li>
+                        <li>
+                            <span></span>
+                            未关闭的任务
+                        </li>
+                        <li>
+                            <span></span>
+                            拨出通话
+                        </li>
+                        <li>
+                            <span></span>
+                            逾期的通话
+                        </li>
+                        <li>
+                            <span></span>
+                            过期的任务
+                        </li>
+                        <li>
+                            <span></span>
+                            过去的活动
+                        </li>
+                        <li>
+                            <span></span>
+                            安排的通话
+                        </li>
+                        <li>
+                            <span></span>
+                            本周的活动
+                        </li>
+                        <li>
+                            <span></span>
+                            今日 + 过期
+                        </li>
+                        <li>
+                            <span></span>
+                            今天的活动
+                        </li>
+                        <li>
+                            <span></span>
+                            今天安排的通话
+                        </li>
+                        <li>
+                            <span></span>
+                            今天的安排和逾期的通话
+                        </li>
+                        <li>
+                            <span></span>
+                            本日任务
+                        </li>
+                        <li>
+                            <span></span>
+                            明日任务
+                        </li>
+                        <li>
+                            <span></span>
+                            未接听的通话
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="createView">
+                    <span style="margin-left:15px;">+新建视图</span>
+                </div>
+            </div>
+        </div>
+        <div class="centent_right">
+            <div class="jingling">
+                <a href="zsp_left.html"><span class="svgIconsImg1"></span></a>
+                <a href="zsp_right.html"><span class="svgIconsImg2"></span></a>
+            </div>
+            <div class="anniu">
+                <ul>
+                    <li>
+                        <a href="renwu.html">
+                            <input type="button" class="smallPlusGraybtn" value="任务">
+                        </a>
+                    </li>
+                    <li>
+                        <input type="button" class="smallPlusGraybtn" value="活动">
+                    </li>
+                    <li>
+                        <input type="button" class="smallPlusGraybtn" value="通话">
+                    </li>
+                    <li>
+                        <input type="button" class="dian" value="···">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="box_bottom">
+        <div class="kefu1_fu1" id="kefu1_fu1">
+            <div class="kefu1">
+                <span>客户</span>
+            </div>
+            <div class="bottom_bottom">
+                <ul>
+                    <li>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="kefu1_fu2" id="kefu1_fu2">
+            <div class="kefu1">
+                <span>未关单 交易</span>
+            </div>
+            <div class="bottom_bottom">
+                <ul>
+                    <li>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="kefu1_fu3" id="kefu1_fu3">
+            <div class="kefu1">
+                <span>线索/联系人</span>
+            </div>
+            <div class="bottom_bottom">
+                <ul class="kefu1_fu3_li">
+                    <li>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="kefu1_fu4" id="kefu1_fu4">
+            <div class="kefu1">
+                <span>其他</span>
+            </div>
+            <div class="bottom_bottom">
+                <ul class="kefu1_fu3_li">
+                    <li>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 详细信息 -->
+        <div class="xiangxi" id="xiangxi" style="display:none;">
+            <i class="huiqu" id="huiqu"></i>
+            <div class="xiangxi_left">
+
+            </div>
+            <div class="xiangxi_right">
+
+            </div>
+        </div>
+    </div>
+    <!-- 底部聊天 -->
+    <div class="bottom"></div>
+</body>
+
+</html>
+<script type="text/javascript" src="http://g.alicdn.com/sj/lib/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/artTemplate.js/3.0.1/template.js"></script>
+<script type="text/javascript" src="zsp_js/index.js"></script>
+<script type="text/html" id="fu1">
+    {{if code==200}}
+        {{each data}}
+            <div class="bottom_one bottom_one1">
+                <span class="jisuan"></span>
+                <span class="CRM">{{$value.主题}}</span>
+                <span class="shijian">{{$value.到期日期}}</span>
+                <span class="keji">{{$value.关联到}}</span>
+                <span class="xingming">- {{$value.联系人姓名}}</span>
+                <span class="yonghuname">{{$value.活动所有者}}</span>
+                <span class="zhuangtai">{{$value.状态}}</span>
+                <p class="jine">¥<span>{{$value.金额}}</span></p>
+                <span class="cxbj">编辑</span>
+            </div>
+        {{/each}}
+        {{else}}
+        <li>暂无记录</li>
+    {{/if}}
+</script>
+<script type="text/html" id="fu2">
+    {{if code==200}}
+        {{each data}}
+            <div class="bottom_one bottom_one2">
+                <span class="jisuan1"></span>
+                <span class="CRM">{{$value.主题}}</span>
+                <span class="shijian">{{$value.到期日期}}</span>
+                <p class="tonghua"><span>{{$value.通话时间}}</span>秒</p>
+                <span class="keji">{{$value.关联到}}</span>
+                <span class="xingming">- {{$value.联系人姓名}}</span>
+                <span class="yonghuname">{{$value.活动所有者}}</span>
+                <span class="zhuangtai">{{$value.状态}}</span>
+                <p class="jine">¥<span>{{$value.金额}}</span></p>
+                <span class="cxbj">编辑</span>
+            </div>
+        {{/each}}
+        {{else}}
+        <li>暂无记录</li>
+    {{/if}}
+</script>
+<script type="text/html" id="fu3">
+    {{if code==200}}
+        {{each data}}
+            <div class="bottom_one bottom_one3">
+                <span class="jisuan"></span>
+                <span class="CRM">{{$value.主题}}</span>
+                <span class="shijian">{{$value.到期日期}}</span>
+                <p class="tonghua"><span>{{$value.通话时间}}</span>秒</p>
+                <span class="keji">{{$value.关联到}}</span>
+                <span class="yonghuname">{{$value.活动所有者}}</span>
+                <span class="zhuangtai">{{$value.状态}}</span>
+                <span class="cxbj cxbj_top">编辑</span>
+            </div>
+        {{/each}}
+        {{else}}
+        <li>暂无记录</li>
+    {{/if}}
+</script>
+<script type="text/html" id="fu4">
+    {{if code==200}}
+        {{each data}}
+            <div class="bottom_one bottom_one4">
+                <span class="jisuan"></span>
+                <span class="CRM">{{$value.主题}}</span>
+                <span class="shijian">{{$value.到期日期}}</span>
+                <span class="keji">{{$value.关联到}}</span>
+                <span class="yonghuname">{{$value.活动所有者}}</span>
+                <span class="zhuangtai">{{$value.状态}}</span>
+                <span class="cxbj cxbj_top">编辑</span>
+            </div>
+        {{/each}}
+        {{else}}
+        <li>暂无记录</li>
+    {{/if}}
+</script>
+<script type="text/html" id="fu1cl">
+    {{if code==200}}
+        {{each data}}
+            <div class="left_top">
+                <div class="top_biao">
+                    <span class="top_biao_sj"></span>
+                    <span class="bixo_ti">{{$value.主题}}</span>
+                    <span class="biaoqian"></span>
+                    <a href="#">添加标签</a>
+                    <div class="yincang">
+                        <input type="text">
+                        <span class="baocun">保存</span>
+                        <span class="quxiao">取消</span>
+                    </div>
+                </div>
+                <div class="topkeji">
+                    <div class="topkeji_jiaoyi">
+                        <p class="jiaoyi">交易 <a href="#">兴时科技</a></p>
+                        <p class="zhuchi">
+                            <span class="zhuchi_zc">主持</span>
+                            <span class="zhuchi_name">{{$value.活动所有者}}</span>
+                        </p>
+                    </div>
+                    <div class="topkeji_div">
+                        <span class="keji_rli"></span>
+                        <span class="keji_sj"></span>
+                        <span class="keji_zt"></span>
+                        <span class="keji_rli_sj">星期三, 十二月 05</span>
+                        <span class="keji_sj_sj">11:27 上午 - 11:32 上午</span>
+                        <span class="keji_zt_zt">{{$value.状态}}</span>
+                        <span class="huabi huabi1"></span>
+                        <span class="huabi huabi2"></span>
+                        <span class="huabi huabi3"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="left_centent">
+                <span class="qita">其他信息</span>
+                <div class="xiugai">
+                    <div class="xiugai_left">
+                        <span class="xgz">修改者</span>
+                        <span class="xgzname">对对对</span>
+                        <span class="xgsj">星期三, 5 十二月 2018 08:27 上午</span>
+                    </div>
+                    <div class="chuangjian_right">
+                        <span class="xgz">创建者</span>
+                        <span class="xgzname">对对对</span>
+                        <span class="xgsj">星期三, 5 十二月 2018 08:27 上午</span>
+                    </div>
+                </div>
+            </div>
+            <div class="left_bottom">
+                <div class="cjzhe">
+                    <span>参加者 <a href="#">+添加</a></span>
+                </div>
+                <div class="qingkuang">
+                    <span class="yqrs daxiao">0</span>
+                    <span class="ckrs daxiao">0</span>
+                    <span class="ddrs daxiao">0</span>
+                    <span class="yaoqing">已邀请</span>
+                    <span class="chakan">去查看</span>
+                    <span class="daiding">待定</span>
+                </div>
+            </div>
+            <div class="left_input">
+                <span>备注</span>
+                <div class="inputkuang">
+                    <input type="text" placeholder="添加备注...">
+                    <textarea tabindex="1000" class="" style="height:60px; overflow:auto !important; resize:vertical !important;padding: 5px;"
+                        placeholder="添加备注"></textarea>
+                </div>
+                <span class="fujia">附加</span>
+                <span class="fujian">附件</span>
+                <span class="meiyfj">没有附件</span>
+                <span class="jjzccz">即将执行的操作</span>
+            </div>
+            <div class="dpngzuo">
+                <br>
+                <div class="jinxingdz"><span>没有即将进行的动作</span></div>
+                <br>
+            </div>
+        {{/each}}
+        {{else}}
+        <li>暂无记录</li>
+    {{/if}}
+                
+</script>
+<script>
+    $(function () {
+        $.ajax({
+            url: "zsp_php/api1.php",
+            type: "POST",
+            dataType: "json",
+            success: function (data) {
+                console.log(data);
+                var html = template("fu1", data);
+                $('.bottom_bottom ul li').html(html);
+                $(".bottom_one1").on("click", function () {
+                    console.log(this);
+                    console.log("ok");
+                    $("#xiangxi").css({ "display": "block", "margin-left": 0 + "px" });
+                })
+                $("#huiqu").on("click", function () {
+                    $("#xiangxi").css({ "display": "none", "margin-left": 2000 + "px" });
+                })
+            },
+        });
+        $.ajax({
+            url: "zsp_php/api1.php",
+            type: "POST",
+            dataType: "json",
+            success: function (data) {
+                console.log(data);
+                var html = template("fu1cl", data);
+                $('.xiangxi_left').html(html);
+            },
+        });
+        $.ajax({
+            url: "zsp_php/api2.php",
+            type: "POST",
+            dataType: "json",
+            success: function (data) {
+                console.log(data);
+                var html = template("fu2", data);
+                $('#kefu1_fu2 .bottom_bottom ul li').html(html);
+                $(".bottom_one2").on("click", function () {
+                    $(".kefu1_fu2").addClass("donghua2");
+                    $("#xiangxi").css({ "display": "block", "margin-left": 0 + "px" });
+                })
+                $("#huiqu").on("click", function () {
+                    $(".kefu1_fu2").removeClass("donghua2");
+                    $("#xiangxi").css({ "display": "none", "margin-left": 2000 + "px" });
+                })
+            },
+        });
+        $.ajax({
+            url: "zsp_php/api3.php",
+            type: "POST",
+            dataType: "json",
+            success: function (data) {
+                console.log(data);
+                var html = template("fu3", data);
+                $('#kefu1_fu3 .bottom_bottom ul li').html(html);
+                $(".bottom_one3").on("click", function () {
+                    $(".kefu1_fu3").addClass("donghua3");
+                    $("#xiangxi").css({ "display": "block", "margin-left": 0 + "px" });
+                })
+                $("#huiqu").on("click", function () {
+                    $(".kefu1_fu3").removeClass("donghua3");
+                    $("#xiangxi").css({ "display": "none", "margin-left": 2000 + "px" });
+                })
+            },
+        });
+        $.ajax({
+            url: "zsp_php/api4.php",
+            type: "POST",
+            dataType: "json",
+            success: function (data) {
+                console.log(data);
+                var html = template("fu4", data);
+                $('#kefu1_fu4 .bottom_bottom ul li').html(html);
+                $(".bottom_one4").on("click", function () {
+                    $(".kefu1_fu4").addClass("donghua4");
+                    $("#xiangxi").css({ "display": "block", "margin-left": 0 + "px" });
+                })
+                $("#huiqu").on("click", function () {
+                    $(".kefu1_fu4").removeClass("donghua4");
+                    $("#xiangxi").css({ "display": "none", "margin-left": 2000 + "px" });
+                })
+            },
+        });
+    });
+    var a = true;
+    span_fu.onclick = function () {
+        if (a) {
+            xlcd.style.display = "block";
+            a = false;
+        } else {
+            xlcd.style.display = "none";
+            a = true;
+        }
+    }
+</script>

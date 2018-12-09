@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            outline: none medium;
+            text-decoration: none;
+        }
+        .box{
+            width: 1670px;
+            height: 930px;
+            background-color: yellowgreen;
+            z-index: 99;
+        }
+        .juzhong{
+            width: 1630px;
+            height: 930px;
+            margin: 0 auto;
+        }
+        .box1{
+            width: 100%;
+            height: 108px;
+            
+        }
+        .quanbu{
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            font-size:22px;
+            color: #010000;
+        }
+        .sou{
+            position: absolute;
+            left: 220px;
+            top: 25px;
+            border-radius: 4px;
+            border: 1px solid #c4bfbf;
+            background-color: #fff;
+            width: 188px;
+            padding: 2px 0;
+            transition: width ease .3s;
+        }
+        .ico-search{
+            background-position: 0 0;
+            width: 16px;
+            height: 16px;
+            margin: 2px 10px 0 8px;
+            background: url(../image/svgicons_43e8a_.svg) no-repeat 0px 0px;
+            display: block;
+        }
+        .sous{
+            position: absolute;
+            left: 30px;
+            top: 0px;
+            padding-top: 4px;
+            width: 150px;
+            border:none;
+            outline:none;
+        }
+        .fr{
+            position: absolute;
+            right: 20px;
+            top:25px;
+            width:280px;
+            height: 40px;
+        }
+        .cp{
+            display: inline-block;
+            width: 100px;
+            height: 38px;
+            line-height: 38px;
+            text-align: center;
+            background-color: #19bc7d!important;
+            background-image: none!important;
+            border: solid 1px #19bc7d!important;
+            color: white;
+            cursor: pointer;
+        }
+        .fr .gaoji{
+            position: absolute;
+            top:0;
+            left: 110px;
+            font-size: 15px;
+            color: rgb(115, 115, 115);
+        }
+        .fr .you{
+            position: absolute;
+            top: 20px;
+            left: 110px;
+            font-size: 14px;
+            color: rgb(170, 169, 175);
+        }
+        .cb{
+            width: 400px;
+            height: 35px;
+            position: absolute;
+            top:60px;
+            left:20px;
+        }
+        .shanchu{
+            padding: 6px 8px;
+            font-family: ProximaNovaRegular,sans-serif!important;
+            font-size: 13px;
+            color: #333;
+            border: 1px solid #c7c7c7;
+            opacity: .5;
+            height: auto!important;
+        }
+        .yidong{
+            background-color: #f6f6f6;
+            color: #333!important;
+            border: 1px solid rgba(0,0,0,0.1)!important;
+            opacity: .5;
+            border-radius: 2px;
+            padding: 6px 10px;
+            font-size: 13px;
+            font-family: ProximaNovaRegular,sans-serif!important;
+            height: auto;
+          
+            margin-left:15px;
+        }
+        .yidong span{
+            background: url(../image/svgicons_43e8a_.svg) no-repeat scroll -265px -401px;
+            width: 11px;
+            height: 7px;
+            display: block;
+            margin-left: 7px;
+            display: inline-block;
+        }
+        .box2{
+            min-width: 100%;
+            background: #c4bfbf;
+        }
+        .neirongtop{
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        .neirongtop thead{
+            display: table-header-group;
+            vertical-align: middle;
+            border-color: inherit;
+        }
+        .neirongtop thead tr{
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+        .neirongtop thead tr th{
+            padding-top: 10px;
+            padding-bottom: 9px;
+            background-color: #eaeaea;
+        }
+        .p1{
+            width: 14px;
+            padding-left: 15px;
+        }
+        .p2{
+            margin-left: 25px;
+            color: #9d9d9d;
+            text-transform: uppercase;
+            
+        }
+        #baogaomc{
+            font-family: ProximaNovaLtSemibold,sans-serif;
+            font-size: 12px;
+            position: relative;
+            color: #444;
+            margin-left: 35px;
+            float: left;
+        }
+        #baogaomc span{
+            background: url(../image/svgicons_43e8a_.svg) no-repeat -268px -428px;
+            width: 15px;
+            height: 10px;
+            position: absolute;
+            display: inline-block;
+            top: 2px;
+            right: -15px;
+            display: block;
+            
+            background-position: -263px -423px;
+    
+        }
+        #miaoshu{
+            font-family: ProximaNovaLtSemibold,sans-serif;
+            font-size: 12px;
+            position: relative;
+            color: #444;
+            float: left;
+        }
+        #youjian{
+            width: 100%;
+            height: 690px;
+            background-color:#19bc7d;
+            overflow: scroll;
+        }
+        #youjian1{
+            width: 100%;
+            height: 900px;
+            background-color:#f6f6f6;
+            overflow:hidden;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="juzhong">
+        <div class="box1">
+            <span class="quanbu">客户与联系人报表</span>
+            <div class="sou">
+                <span class="ico-search">
+                    <input class="sous" type="text" placeholder="Search 全部报表">
+                </span>
+                
+            </div>
+            <div class="fr">
+                <a class="cp" href="#">创建报表</a>
+                <span class="gaoji">高级CRM数据分析</span>
+                <p class="you">由Zoho Reports提供支持</p>
+            </div>
+            <div class="cb">
+                <button class="shanchu">删除</button>
+                <button class="yidong">移动到文件夹<span></span></button>
+            </div>
+        </div>
+        <div class="box2">
+            <!-- <div class="box2_1"> -->
+                <table class="neirongtop" width="100%" cellpadding="0" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th class="p1"></th>
+                            <th class="p2" width="34%"><div id="baogaomc" style="cursor:pointer" onclick="crmReports.sortReports('REPORTNAME',this,false)">报表名称<span></span></div></th>
+                            <th class="p2" width="50%"><div id="miaoshu">描述</div></th>
+                            <th class="p2" width="16%">
+                                <div id="miaoshu">上一次运行日期</div>
+                            </th>    
+                        </tr>
+                    </thead>
+                </table>
+                <div id="youjian">
+                    <div id="youjian1">
+                        <form name="ShowReportsForm" method="post" onsubmit="return false;">
+
+
+                        </form>
+
+                    </div>
+                        
+                </div>
+            <!-- </div> -->
+
+        </div>
+        </div>
+    </div>
+  
+</body>
+</html>

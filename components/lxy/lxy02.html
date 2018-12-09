@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/lxy02.css">
+</head>
+<body>
+    <!-- 顶部 -->
+    <header>
+        <div class="wrap">
+            <div class="top_nav">
+                <div class="top_left">
+                    <div class="text">
+                       <span class="text_p check" data-index=0>
+                           所有未关闭的线索
+                           <span></span>
+                       </span>
+                       <div class="xlcd spte" id="xlcd" style="display:none;" data-wih="off">
+                            <div class="CVSearchBox">
+                                <span class="suosuo"></span>
+                                <input type="text" style="background:none;outline:none;border:0px;height:30px;">
+                            </div>
+                            <div class="cvlist">
+                                <p style="color:rgb(119,119,119);margin:0;padding:0;font-size:13.5px;">分享给我的</p>
+                                <ul>
+                                    <li>
+                                        <span></span>   
+                                        所有关闭的线索
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        已转换的线索
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        垃圾线索
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        邮件标签
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        我的已修改线索
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        我的线索
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        不合格的线索
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        打开线索
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        最近创建的线索
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        最近修改的线索
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        今日线索
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        未读的线索
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="createView">
+                                <span style="margin-left:15px;">+新建视图</span>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="oop">
+                       <span>编辑</span>
+                        <span class="s1"></span> 
+                    </div>
+                </div>
+                <div class="top_right" style="margin-right:20px;">
+                    <div class="left" style="margin-right:30px;">
+                       <a href="#" class="bp1"></a>
+                       <a href="#" class="bp2"></a>
+                       <a href="#" class="bp3"></a>
+                    </div>
+                    <div class="right">
+                        <div class="nex">
+                            <span class="s1">+</span>
+                            <span class="s2 check" data-index=1>导入</span>
+                        </div>
+                        <div class="xlcd2 spte" style="display:none;" data-wih="off">
+                            <ul>
+                                <li>
+                                    导入线索    
+                                </li>
+                                <li>
+                                    导入备注
+                                </li>
+                            </ul>
+                        </div>
+                        <span class="s3 check" style="position: relative;" data-index=2>...</span>
+                        <div class="xlcd3 spte" style="display:none;" data-wih="off">
+                            <ul>
+                                <li>批量删除</li>
+                                <li>批量更新</li>
+                                <li>批量转换</li>
+                                <li>管理标签</li>
+                                <li>群发邮件</li>
+                                <li>自动应答</li>
+                                <li>审批线索</li>
+                                <li>重复的线索记录</li>
+                                <li id="seep"></li>
+                                <li style="margin-bottom:10px;margin-top:9px;">Zoho Sheet视图</li>
+                                <li>打印预览</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 中间内容部分 -->
+    <div class="conten">
+        <div class="center_left">
+            <form action="">
+                <div class="customview1">
+                    <div class="lpDivHeadD">
+                        <div class="mT12">
+                            <span>过滤线索通过</span>
+                            <span class="sousuo"></span>
+                        </div>
+                        <div class="mT13" style="visibility: hidden;">
+                            <span class="sousuo"></span>
+                            <input type="text" placeholder="搜索">
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                    <div class="inner-center">
+                        <div class="conten">
+                            <div class="libiao">
+                                <!-- 左边导航开始 -->
+                                <div class="li">
+                                    <div class="head">
+                                        <div class="fk">
+                                            <div class="cnm" id="syx">
+                                                <span class="dui"></span>
+                                                <span>受影响的记录</span>
+                                            </div>
+                                            <div class="xx" id="xx" style="display:none;">
+                                                通过
+                                                <div class="xiala">
+                                                    <select name="" id="">
+                                                        <option value="1">用户和系统</option>
+                                                        <option value="2">用户或系统</option>
+                                                        <option value="3">用户</option>
+                                                        <option value="4">系统</option>
+                                                        <option value="5">仅用户</option>
+                                                        <option value="">仅系统</option>
+                                                    </select>
+                                                    <span class="jiantou"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tk" id="tk" style="display:none;">
+                                            <div class="lf">
+                                                <select name="" id="x1">
+                                                    <option value="1">在最近</option>
+                                                    <option value="2">今天</option>
+                                                    <option value="3">本周</option>
+                                                    <option value="4">本月</option>
+                                                    <option value="5">今年</option>
+                                                    <option value="6">在过去30天</option>
+                                                    <option value="7">在过去60天</option>
+                                                    <option value="8">在过去90天</option>
+                                                    <option value="9">知道现在</option>
+                                                </select>
+                                                <input type="text" value="2" id="pt">
+                                                <select name="" id="x2" style="width:27px;height:17px;">
+                                                    <option value="1">天</option>
+                                                    <option value="2">周</option>
+                                                    <option value="3">月</option>
+                                                </select>
+                                                <span class="s1"></span>
+                                                <span class="s2"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="li">
+                                        <div class="head">
+                                            <div class="fk">
+                                                <div class="cnm" id="syx">
+                                                    <span class="dui"></span>
+                                                    <span>受影响的记录</span>
+                                                </div>
+                                                <div class="xx" id="xx" style="display:none;">
+                                                    通过
+                                                    <div class="xiala">
+                                                        <select name="" id="">
+                                                            <option value="1">用户和系统</option>
+                                                            <option value="2">用户或系统</option>
+                                                            <option value="3">用户</option>
+                                                            <option value="4">系统</option>
+                                                            <option value="5">仅用户</option>
+                                                            <option value="">仅系统</option>
+                                                        </select>
+                                                        <span class="jiantou"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tk" id="tk" style="display:none;">
+                                                <div class="lf">
+                                                    <select name="" id="x1">
+                                                        <option value="1">在最近</option>
+                                                        <option value="2">今天</option>
+                                                        <option value="3">本周</option>
+                                                        <option value="4">本月</option>
+                                                        <option value="5">今年</option>
+                                                        <option value="6">在过去30天</option>
+                                                        <option value="7">在过去60天</option>
+                                                        <option value="8">在过去90天</option>
+                                                        <option value="9">知道现在</option>
+                                                    </select>
+                                                    <input type="text" value="2" id="pt">
+                                                    <select name="" id="x2" style="width:27px;height:17px;">
+                                                        <option value="1">天</option>
+                                                        <option value="2">周</option>
+                                                        <option value="3">月</option>
+                                                    </select>
+                                                    <span class="s1"></span>
+                                                    <span class="s2"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="li">
+                                        <div class="head">
+                                            <div class="fk">
+                                                <div class="cnm" id="syx">
+                                                    <span class="dui"></span>
+                                                    <span>受影响的记录</span>
+                                                </div>
+                                                <div class="xx" id="xx" style="display:none;">
+                                                    通过
+                                                    <div class="xiala">
+                                                        <select name="" id="">
+                                                            <option value="1">用户和系统</option>
+                                                            <option value="2">用户或系统</option>
+                                                            <option value="3">用户</option>
+                                                            <option value="4">系统</option>
+                                                            <option value="5">仅用户</option>
+                                                            <option value="">仅系统</option>
+                                                        </select>
+                                                        <span class="jiantou"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tk" id="tk" style="display:none;">
+                                                <div class="lf">
+                                                    <select name="" id="x1">
+                                                        <option value="1">在最近</option>
+                                                        <option value="2">今天</option>
+                                                        <option value="3">本周</option>
+                                                        <option value="4">本月</option>
+                                                        <option value="5">今年</option>
+                                                        <option value="6">在过去30天</option>
+                                                        <option value="7">在过去60天</option>
+                                                        <option value="8">在过去90天</option>
+                                                        <option value="9">知道现在</option>
+                                                    </select>
+                                                    <input type="text" value="2" id="pt">
+                                                    <select name="" id="x2" style="width:27px;height:17px;">
+                                                        <option value="1">天</option>
+                                                        <option value="2">周</option>
+                                                        <option value="3">月</option>
+                                                    </select>
+                                                    <span class="s1"></span>
+                                                    <span class="s2"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="li">
+                                        <div class="head">
+                                            <div class="fk">
+                                                <div class="cnm" id="syx">
+                                                    <span class="dui"></span>
+                                                    <span>受影响的记录</span>
+                                                </div>
+                                                <div class="xx" id="xx" style="display:none;">
+                                                    通过
+                                                    <div class="xiala">
+                                                        <select name="" id="">
+                                                            <option value="1">用户和系统</option>
+                                                            <option value="2">用户或系统</option>
+                                                            <option value="3">用户</option>
+                                                            <option value="4">系统</option>
+                                                            <option value="5">仅用户</option>
+                                                            <option value="">仅系统</option>
+                                                        </select>
+                                                        <span class="jiantou"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tk" id="tk" style="display:none;">
+                                                <div class="lf">
+                                                    <select name="" id="x1">
+                                                        <option value="1">在最近</option>
+                                                        <option value="2">今天</option>
+                                                        <option value="3">本周</option>
+                                                        <option value="4">本月</option>
+                                                        <option value="5">今年</option>
+                                                        <option value="6">在过去30天</option>
+                                                        <option value="7">在过去60天</option>
+                                                        <option value="8">在过去90天</option>
+                                                        <option value="9">知道现在</option>
+                                                    </select>
+                                                    <input type="text" value="2" id="pt">
+                                                    <select name="" id="x2" style="width:27px;height:17px;">
+                                                        <option value="1">天</option>
+                                                        <option value="2">周</option>
+                                                        <option value="3">月</option>
+                                                    </select>
+                                                    <span class="s1"></span>
+                                                    <span class="s2"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="center_right">
+            <div class="top">
+               <header>
+                   <div class="wrap">
+                       <div class="left">
+                           <span class="fk"></span>
+                           <span style="margin-lef:13px;">画图视布：</span>
+                           <span class="dIB">
+                               <span class="vam">Leads - 画布</span>
+                               <span class="jx"></span>
+                           </span>
+                           <span style="font-size:13px;">编辑</span>
+                       </div>
+                       <div class="right">
+                           <div class="mR12">
+                               <span>按顺序排</span>
+                               <span class="jx"></span>
+                           </div>
+                           <div class="pL12">
+                               <span class="fk"></span>
+                               <span style="font-size:15px;">适应屏幕</span>
+                           </div>
+                       </div>
+                   </div>
+               </header>
+               <div class="center">
+                   <ul>
+                        <li>
+                        <div class="left">
+                            <div class="hb">
+                                <a href="#"></a>
+                            </div>
+                            <div class="fk">
+                              <input type="checkbox">
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="zm">
+                                <a href="">
+                                    <img src="images/E8776.png" alt="">
+                                </a>
+                            </div>
+                            <div class="tu">
+                                <img src="images/icon8.png" alt="">
+                            </div>
+                            <div class="inner-right">
+                                <p><span style="font-size:22px;">贝贝李</span>&nbsp;&nbsp;&nbsp;/<span style="color:#38832a;font-size:14px;"> n/a</span></p>
+                                <p style="font-size:14px;"><span>1445236951@qq.com</span>&nbsp;&nbsp;&nbsp;<span>电话:5555-5555-5555</span>&nbsp;&nbsp;&nbsp;<span>手机:555-555-555</span></p>
+                                <p style="font-size:14px;"><span>信息统计经理</span>&nbsp;&nbsp;&nbsp;<span>web下载</span></p>
+                            </div>
+                        </div>
+                        </li>
+                        <li>
+                            <div class="left">
+                                <div class="hb">
+                                    <a href="#"></a>
+                                </div>
+                                <div class="fk">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="zm">
+                                    <a href="">
+                                         <img src="images/E8776.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="tu">
+                                    <img src="images/icon8.png" alt="">
+                                </div>
+                                <div class="inner-right">
+                                    <p><span style="font-size:22px;">贝贝李</span>&nbsp;&nbsp;&nbsp;/<span style="color:#38832a;font-size:14px;"> n/a</span></p>
+                                    <p style="font-size:14px;"><span>1445236951@qq.com</span>&nbsp;&nbsp;&nbsp;<span>电话:5555-5555-5555</span>&nbsp;&nbsp;&nbsp;<span>手机:555-555-555</span></p>
+                                    <p style="font-size:14px;"><span>信息统计经理</span>&nbsp;&nbsp;&nbsp;<span>web下载</span></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                        <div class="left">
+                            <div class="hb">
+                                <a href="#"></a>
+                            </div>
+                            <div class="fk">
+                                <input type="checkbox">
+                             </div>
+                        </div>
+                        <div class="right">
+                            <div class="zm">
+                                <a href="">
+                                    <img src="images/E8776.png" alt="">
+                                    </a>
+                            </div>
+                            <div class="tu">
+                                <img src="images/icon8.png" alt="">
+                                </div>
+                            <div class="inner-right">
+                                <p><span style="font-size:22px;">贝贝李</span>&nbsp;&nbsp;&nbsp;/<span style="color:#38832a;font-size:14px;"> n/a</span></p>
+                                <p style="font-size:14px;"><span>1445236951@qq.com</span>&nbsp;&nbsp;&nbsp;<span>电话:5555-5555-5555</span>&nbsp;&nbsp;&nbsp;<span>手机:555-555-555</span></p>
+                                <p style="font-size:14px;"><span>信息统计经理</span>&nbsp;&nbsp;&nbsp;<span>web下载</span></p>
+                            </div>
+                        </div>
+                        </li>
+                   </ul>
+               </div>
+            </div>
+            <div class="botton">
+                <div class="center">
+                    <div class="botton_left" style="margin-left:30px;">
+                        <span>共计:10</span>
+                    </div>
+                    <div class="botton_right" style="margin-right:30px;">
+                        <div class="xl" style="margin-right:10px;">
+                            <select name="" id="">
+                                <option value="1">10每页记录数</option>
+                                <option value="2">20每页记录数</option>
+                                <option value="3">30每页记录数</option>
+                                <option value="4">40每页记录数</option>
+                                <option value="5">50每页记录数</option>
+                                <option value="6">60每页记录数</option>
+                            </select>
+                        </div>
+                        <div class="xj">
+                            <span style="font-size:28px;color:#eee;"><</span>
+                            <span>1</span>&nbsp;<span style="color:#eee;">到</span>&nbsp;&nbsp;<span>10</span>
+                            <span style="font-size:28px;color:#eee;">></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="http://g.alicdn.com/sj/lib/jquery.min.js"></script>
+<script src="js/lxy.js"></script>

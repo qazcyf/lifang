@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="zsp_css/normalize.css">
+    <link rel="stylesheet" href="zsp_css/daohang.css">
+    <link rel="stylesheet" href="zsp_css/zsp_left.css">
+    <link rel="stylesheet" href="zsp_css/global.css">
+    <link rel="stylesheet" href="zsp_css/cela.css">
+</head>
+
+<body>
+    <div class="box_top">
+        <!-- 遮挡 -->
+        <!-- 页签遮挡 -->
+        <div class="zhedang"></div>
+        <div class="zhedang_yeqian">
+            <div class="zhedang_yeqian_h">
+                <h2>页签组 </h2>
+                <span></span>
+            </div>
+            <div class="zhedang_yeqian_bianji">
+                <div class="top">
+                    <p>名称</p>
+                    <input type="text">
+                    <span></span>
+                </div>
+                <div class="zhedang_yeqian_nav">
+                    <p>页签</p>
+                    <div id="zhedang_box">
+                        <span class="gundongtiao"></span>
+                        <ul id="zhedang_ul">
+                            <li class="lis zhedang_lis" data-lis="ons">
+                                <span></span>主页</li>
+                            <li class="lis zhedang_lis" data-lis="ons">
+                                <span></span>动态</li>
+                            <li data-lis="on" class="zhedang_lis">
+                                <span></span>线索</li>
+                            <li data-lis="on" class="zhedang_lis">
+                                <span></span>联系人</li>
+                            <li data-lis="on" class="zhedang_lis">
+                                <span></span>客户</li>
+                            <li data-lis="on" class="zhedang_lis">
+                                <span></span>交易</li>
+                            <li data-lis="on" class="zhedang_lis">
+                                <span></span>任务、通话及活动</li>
+                            <li data-lis="on" class="zhedang_lis">
+                                <span></span>报表</li>
+                            <li data-lis="on" class="zhedang_lis">
+                                <span></span>数据分析</li>
+                            <li data-lis="on" class="zhedang_lis">
+                                <span></span>产品</li>
+                            <li data-lis="on" class="zhedang_lis">
+                                <span></span>报价</li>
+                            <li data-lis="on" class="zhedang_lis">
+                                <span></span>数据分析</li>
+                            <li data-lis="on" class="zhedang_lis">
+                                <span></span>产品</li>
+                            <li data-lis="on" class="zhedang_lis">
+                                <span></span>报价</li>
+                            <li data-lis="on" class="zhedang_lis">
+                                <span></span>销售订单</li>
+                            <li data-lis="on" class="zhedang_lis">
+                                <span></span>采购订单</li>
+                            <li data-lis="on" class="zhedang_lis">
+                                <span></span>发货单</li>
+                            <li data-lis="on" class="zhedang_lis">
+                                <span></span>SalesInbox</li>
+                            <li data-lis="on" class="zhedang_lis">
+                                <span></span>市场活动</li>
+                            <li data-lis="on" class="zhedang_lis">
+                                <span></span>供货商</li>
+                            <li data-lis="on" class="zhedang_lis">
+                                <span></span>价格表</li>
+                            <li data-lis="on" class="zhedang_lis">
+                                <span></span>服务支持</li>
+                            <li data-lis="on" class="zhedang_lis">
+                                <span></span>解决方案</li>
+                            <li data-lis="on" class="zhedang_lis">
+                                <span></span>预测</li>
+                            <li data-lis="on" class="zhedang_lis">
+                                <span></span>SalesInbox</li>
+                            <li data-lis="on" class="zhedang_lis">
+                                <span></span>电子邮件</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="zhedang_btn">
+                    <span class="xiao">取消</span>
+                    <span class="cun">保存</span>
+                </div>
+            </div>
+        </div>
+        <!-- 页签组管理页面 -->
+        <!-- <div class="yeqian_guanli">
+            <div class="zhedang_yeqian_h">
+                <h2>页签组 </h2>
+                <span></span>
+            </div>
+            <div class="zhedang_yeqian_p">
+                <p class="zhedang_yeqian_text">您至多可以创建25个页签组。每个页签组可以包含无限数量的页签。 页签组中的页签访问权限基于用户角色。
+                </p>
+                <div class="zhedang_yeqian_bth">
+                    <p>创建页签组</p>
+                </div>
+                <hr>
+            </div>
+        </div> -->
+        <!-- 导航栏 -->
+        <div class="nav">
+            <div class="nav_left">
+                <div class="nav_left_heng">
+                    <div class="yin">
+                        <p class="fanfkuai"></p>
+                        <h2>页签组</h2>
+                        <p class="yin_ps">
+                            <span></span> 所有标签
+                        </p>
+                        <hr>
+                        <div class="yin_divs">
+                            <span class="cuang">创建</span>
+                            <span class="guan">管理</span>
+                        </div>
+                        <p class="yin_tumo"></p>
+                    </div>
+                </div>
+                <ul>
+                    <li>主页</li>
+                    <li>线索</li>
+                    <li>联系人</li>
+                    <li>客户</li>
+                    <li>交易</li>
+                    <li class="color">任务、通话及活动</li>
+                    <li>报表</li>
+                    <li>数据分析</li>
+                    <li>产品</li>
+                    <li>报价</li>
+                    <li>销售订单</li>
+                    <li>采购订单</li>
+                    <li>发货单</li>
+                    <li>SalesInbox</li>
+                </ul>
+                <div class="nav_left_dian">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="nav_right">
+                <ul>
+                    <li>
+                        试用 - 旗舰版
+                        <br>
+                        <a href="#">升级</a>
+                    </li>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li class="yangshi2">
+                        <p>
+                            <span></span>
+                            <input type="text" placeholder="搜索">
+                            <span></span>
+                        </p>
+                    </li>
+                    <li>
+                        <p></p>
+                        <div class="yin"></div>
+                    </li>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="box_centent">
+        <div class="centent_left">
+            <div class="span_fu" id="span_fu">
+                <span>所有的任务、通话及活动</span>
+            </div>
+            <span class="bianji">编辑</span>
+            <div class="xlcd" id="xlcd" style="display:none;">
+                <div class="CVSearchBox">
+                    <span class="suosuo"></span>
+                    <input type="text" style="background:none;outline:none;border:0px;height:30px;width: 4000px;">
+                </div>
+                <div class="cvlist">
+                    <p style="color:rgb(119,119,119);margin:3px;padding:0;font-size:13.5px;">分享给我的</p>
+                    <ul>
+                        <li>
+                            <span></span>
+                            所有的任务、通话及活动
+                        </li>
+                        <li>
+                            <span></span>
+                            所有电话
+                        </li>
+                        <li>
+                            <span></span>
+                            所有活动
+                        </li>
+                        <li>
+                            <span></span>
+                            所有任务
+                        </li>
+                        <li>
+                            <span></span>
+                            接听的通话
+                        </li>
+                        <li>
+                            <span></span>
+                            取消的通话
+                        </li>
+                        <li>
+                            <span></span>
+                            关闭任务、通话及活动
+                        </li>
+                        <li>
+                            <span></span>
+                            已关闭的任务
+                        </li>
+                        <li>
+                            <span></span>
+                            拨入通话
+                        </li>
+                        <li>
+                            <span></span>
+                            我的任务、通话及活动
+                        </li>
+                        <li>
+                            <span></span>
+                            我接听的通话
+                        </li>
+                        <li>
+                            <span></span>
+                            我的电话
+                        </li>
+                        <li>
+                            <span></span>
+                            我的取消的通话
+                        </li>
+                        <li>
+                            <span></span>
+                            我的活动
+                        </li>
+                        <li>
+                            <span></span>
+                            我的拨入通话
+                        </li>
+                        <li>
+                            <span></span>
+                            我的打开的任务、通话及活动
+                        </li>
+                        <li>
+                            <span></span>
+                            我的未关闭任务
+                        </li>
+                        <li>
+                            <span></span>
+                            我的拨出通话
+                        </li>
+                        <li>
+                            <span></span>
+                            我的逾期的通话
+                        </li>
+                        <li>
+                            <span></span>
+                            我的安排的通话
+                        </li>
+                        <li>
+                            <span></span>
+                            我的今天安排的通话
+                        </li>
+                        <li>
+                            <span></span>
+                            我今天的安排和逾期的通话
+                        </li>
+                        <li>
+                            <span></span>
+                            我的未接听的通话
+                        </li>
+                        <li>
+                            <span></span>
+                            未来一周 + 过期
+                        </li>
+                        <li>
+                            <span></span>
+                            打开任务、通话及活动
+                        </li>
+                        <li>
+                            <span></span>
+                            打开的活动
+                        </li>
+                        <li>
+                            <span></span>
+                            未关闭的任务
+                        </li>
+                        <li>
+                            <span></span>
+                            拨出通话
+                        </li>
+                        <li>
+                            <span></span>
+                            逾期的通话
+                        </li>
+                        <li>
+                            <span></span>
+                            过期的任务
+                        </li>
+                        <li>
+                            <span></span>
+                            过去的活动
+                        </li>
+                        <li>
+                            <span></span>
+                            安排的通话
+                        </li>
+                        <li>
+                            <span></span>
+                            本周的活动
+                        </li>
+                        <li>
+                            <span></span>
+                            今日 + 过期
+                        </li>
+                        <li>
+                            <span></span>
+                            今天的活动
+                        </li>
+                        <li>
+                            <span></span>
+                            今天安排的通话
+                        </li>
+                        <li>
+                            <span></span>
+                            今天的安排和逾期的通话
+                        </li>
+                        <li>
+                            <span></span>
+                            本日任务
+                        </li>
+                        <li>
+                            <span></span>
+                            明日任务
+                        </li>
+                        <li>
+                            <span></span>
+                            未接听的通话
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="createView">
+                    <span style="margin-left:15px;">+新建视图</span>
+                </div>
+            </div>
+        </div>
+        <div class="centent_right">
+            <div class="jingling">
+                <a href="zsp_left.html"><span class="svgIconsImg1"></span></a>
+                <a href="zsp_right.html"><span class="svgIconsImg2"></span></a>
+            </div>
+            <div class="anniu">
+                <ul>
+                    <li>
+                        <a href="renwu.html">
+                            <input type="button" class="smallPlusGraybtn" value="任务">
+                        </a>
+                    </li>
+                    <li>
+                        <input type="button" class="smallPlusGraybtn" value="活动">
+                    </li>
+                    <li>
+                        <input type="button" class="smallPlusGraybtn" value="通话">
+                    </li>
+                    <li>
+                        <input type="button" class="dian" value="···">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="box_content">
+        <div class="fl pr left_filter">
+            <form>
+                <div class="custom fl pr">
+                    <div class="head_top mb5 pl15 pr20 h35">
+                        <div class="mt12">
+                            <span class="fl mw188 dib defaultcursor" style="font-size:15px;">过滤线索通过</span>
+                            <span class="searchIcon dib fr op05 cp"></span>
+                        </div>
+                        <div class="pr fl" id="filter" style="margin-bottom:-1px;display:none">
+                            <span class="setupsearchicon ico-search svgIcons" style="left:1px;"></span>
+                            <input type="text" class="setupsearch" placeholder="搜索" value="">
+                            <a href="javascript:;" class="fr f10 clear svgIcons ico-close ml5 cp mt10" id="search_clear"
+                                style="display:none;"></a>
+                        </div>
+                    </div>
+                    <div class="cb container pr" id="scroll_d">
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="" class="check_box" id="check1">
+                                <label title="受影响的记录" for="check1">受影响的记录</label>
+                                <div class="down">
+                                    <div class="pull">
+                                        通过
+                                        <select name="" id="">
+                                            <option value="0">用户和系统</option>
+                                            <option value="1">用户或系统</option>
+                                            <option value="2">用户</option>
+                                            <option value="3">系统</option>
+                                            <option value="4">仅用户</option>
+                                            <option value="5">仅系统</option>
+                                        </select>
+                                    </div>
+                                    <div class="pull" style="margin-left: 27px;">
+                                        <select name="" id="">
+                                            <option value="0">在最近</option>
+                                            <option value="1">今天</option>
+                                            <option value="2">本周</option>
+                                            <option value="3">本月</option>
+                                            <option value="4">今年</option>
+                                            <option value="5">在过去30天</option>
+                                            <option value="6">在过去60天</option>
+                                            <option value="7">在过去90天</option>
+                                            <option value="8">直到现在</option>
+                                        </select>
+                                        <input type="text" class="text" value="2">
+                                        <select name="" id="">
+                                            <option value="0">天</option>
+                                            <option value="1">周</option>
+                                            <option value="2">月</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" class="check_box" id="check2">
+                                <label title="受影响的记录" for="check2">未受影响的记录</label>
+                                <div class="down">
+                                    <div class="pull">
+                                        通过
+                                        <select name="" id="">
+                                            <option value="0">用户和系统</option>
+                                            <option value="1">用户或系统</option>
+                                            <option value="2">用户</option>
+                                            <option value="3">系统</option>
+                                            <option value="4">仅用户</option>
+                                            <option value="5">仅系统</option>
+                                        </select>
+                                    </div>
+                                    <div class="pull" style="margin-left: 27px;">
+                                        <select name="" id="">
+                                            <option value="0">在最近</option>
+                                            <option value="1">今天</option>
+                                            <option value="2">本周</option>
+                                            <option value="3">本月</option>
+                                            <option value="4">今年</option>
+                                            <option value="5">在过去30天</option>
+                                            <option value="6">在过去60天</option>
+                                            <option value="7">在过去90天</option>
+                                            <option value="8">直到现在</option>
+                                        </select>
+                                        <input type="text" class="text" value="2">
+                                        <select name="" id="">
+                                            <option value="0">天</option>
+                                            <option value="1">周</option>
+                                            <option value="2">月</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" class="check_box" id="check3">
+                                <label title="受影响的记录" for="check3">记录操作</label>
+                                <div class="down">
+                                    <div class="pull">
+                                        <select name="" id="">
+                                            <option value="0">已修改</option>
+                                            <option value="1">未修改</option>
+                                        </select>
+                                    </div>
+                                    <div class="pull">
+                                        通过
+                                        <select name="" id="">
+                                            <option value="0">用户和系统</option>
+                                            <option value="1">用户或系统</option>
+                                            <option value="2">用户</option>
+                                            <option value="3">系统</option>
+                                            <option value="4">仅用户</option>
+                                            <option value="5">仅系统</option>
+                                        </select>
+                                    </div>
+                                    <div class="pull" style="margin-left: 27px;">
+                                        <select name="" id="">
+                                            <option value="0">在最近</option>
+                                            <option value="1">今天</option>
+                                            <option value="2">本周</option>
+                                            <option value="3">本月</option>
+                                            <option value="4">今年</option>
+                                            <option value="5">在过去30天</option>
+                                            <option value="6">在过去60天</option>
+                                            <option value="7">在过去90天</option>
+                                            <option value="8">直到现在</option>
+                                        </select>
+                                        <input type="text" class="text" value="2">
+                                        <select name="" id="">
+                                            <option value="0">天</option>
+                                            <option value="1">周</option>
+                                            <option value="2">月</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" class="check_box" id="check4">
+                                <label title="受影响的记录" for="check4">相关的操作记录</label>
+                                <div class="down">
+                                    <div class="pull">
+                                        <select name="" id="">
+                                            <option value="0">已完成</option>
+                                            <option value="1">未完成</option>
+                                        </select>
+                                    </div>
+                                    <div class="pull">
+                                        通过
+                                        <select name="" id="">
+                                            <option value="0">用户和系统</option>
+                                            <option value="1">用户或系统</option>
+                                            <option value="2">用户</option>
+                                            <option value="3">系统</option>
+                                            <option value="4">仅用户</option>
+                                            <option value="5">仅系统</option>
+                                        </select>
+                                    </div>
+                                    <div class="pull" style="margin-left: 27px;">
+                                        <select name="" id="">
+                                            <option value="0">在最近</option>
+                                            <option value="1">今天</option>
+                                            <option value="2">本周</option>
+                                            <option value="3">本月</option>
+                                            <option value="4">今年</option>
+                                            <option value="5">在过去30天</option>
+                                            <option value="6">在过去60天</option>
+                                            <option value="7">在过去90天</option>
+                                            <option value="8">直到现在</option>
+                                        </select>
+                                        <input type="text" class="text" value="2">
+                                        <select name="" id="">
+                                            <option value="0">天</option>
+                                            <option value="1">周</option>
+                                            <option value="2">月</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- <li>
+                                <input type="checkbox" name="" class="check_box" id="check5">
+                                <label title="受影响的记录" for="check5">邮件状态</label>
+                                <div class="down">
+                                    <div class="pull" style="margin-left: 67px;margin-top: -34px;">
+                                        <select name="" id="">
+                                            <option value="0">已发送</option>
+                                            <option value="1">未发送</option>
+                                            <option value="2">已打开</option>
+                                            <option value="3">未打开</option>
+                                            <option value="4">已接收</option>
+                                            <option value="5">未接收</option>
+                                            <option value="6">已退信</option>
+                                            <option value="7">已打开并且未回复</option>
+                                        </select>
+                                    </div>
+                                    <div class="pull">
+                                        <select name="" id="">
+                                            <option value="0">在最近</option>
+                                            <option value="1">今天</option>
+                                            <option value="2">本周</option>
+                                            <option value="3">本月</option>
+                                            <option value="4">今年</option>
+                                            <option value="5">在过去30天</option>
+                                            <option value="6">在过去60天</option>
+                                            <option value="7">在过去90天</option>
+                                            <option value="8">直到现在</option>
+                                        </select>
+                                        <input type="text" class="text" value="2">
+                                        <select name="" id="">
+                                            <option value="0">天</option>
+                                            <option value="1">周</option>
+                                            <option value="2">月</option>
+                                        </select>
+                                    </div>
+                                    <div class="pull">并且状态是</div>
+                                    <label class="radio-pretty inline checked">
+                                        <input type="radio" checked="checked" name="radio"><span>已打开</span>
+                                    </label><br>
+                                    <label class="radio-pretty inline">
+                                        <input type="radio" name="radio"><span>未打开</span>
+                                    </label><br>
+                                    <label class="radio-pretty inline">
+                                        <input type="radio" name="radio"><span>已退信</span>
+                                    </label><br>
+                                    <label class="radio-pretty inline">
+                                        <input type="radio" name="radio"><span>已打开并且未回复</span>
+                                    </label><br>
+                                    <label class="radio-pretty inline">
+                                        <input type="radio" name="radio"><span>以上任意</span>
+                                    </label><br>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" class="check_box" id="check6">
+                                <label for="check6">行业</label>
+                                <div class="down">
+                                    <div class="pull">
+                                        <select name="" id="">
+                                            <option value="0">是</option>
+                                            <option value="1">不是</option>
+                                            <option value="2">包含</option>
+                                            <option value="3">不包含</option>
+                                            <option value="4">开始字符</option>
+                                            <option value="5">结束字符</option>
+                                            <option value="6">为空</option>
+                                            <option value="7">不为空</option>
+                                        </select>
+                                    </div>
+                                    <div class="pull-input">
+                                        <input type="text" placeholder="在这里输入">
+                                    </div>
+                                </div>
+                            </li> -->
+                            <li>
+                                <input type="checkbox" name="" class="check_box" id="check7">
+                                <label for="check7">主题</label>
+                                <div class="down">
+                                    <div class="pull">
+                                        <select name="" id="">
+                                            <option value="0">是</option>
+                                            <option value="1">不是</option>
+                                            <option value="2">包含</option>
+                                            <option value="3">不包含</option>
+                                            <option value="4">开始字符</option>
+                                            <option value="5">结束字符</option>
+                                            <option value="6">为空</option>
+                                            <option value="7">不为空</option>
+                                        </select>
+                                    </div>
+                                    <div class="pull-input">
+                                        <input type="text" placeholder="在这里输入">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" class="check_box" id="check8">
+                                <label for="check8">活动类型</label>
+                                <div class="down">
+                                    <div class="pull">
+                                        <select name="" id="">
+                                            <option value="0">是</option>
+                                            <option value="1">不是</option>
+                                            <option value="2">包含</option>
+                                            <option value="3">不包含</option>
+                                            <option value="4">开始字符</option>
+                                            <option value="5">结束字符</option>
+                                            <option value="6">为空</option>
+                                            <option value="7">不为空</option>
+                                        </select>
+                                    </div>
+                                    <div class="pull-input">
+                                        <input type="text" placeholder="在这里输入">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="" class="check_box" id="check9">
+                                <label title="受影响的记录" for="check9">到期日期</label>
+                                <div class="down">
+                                    <div class="pull" style="margin-left: 27px;">
+                                        <select name="" id="">
+                                            <option value="0">在最近</option>
+                                            <option value="1">今天</option>
+                                            <option value="2">本周</option>
+                                            <option value="3">本月</option>
+                                            <option value="4">今年</option>
+                                            <option value="5">在过去30天</option>
+                                            <option value="6">在过去60天</option>
+                                            <option value="7">在过去90天</option>
+                                            <option value="8">直到现在</option>
+                                        </select>
+                                        <input type="text" class="text" value="2">
+                                        <select name="" id="">
+                                            <option value="0">天</option>
+                                            <option value="1">周</option>
+                                            <option value="2">月</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+            <div class="filter fl" id="filters">
+                <input type="button" class="inp_btn" value="应用过滤器">
+                <a href="javascript:;">取消</a>
+            </div>
+        </div>
+        <!-- 侧栏完 -->
+        <div class="right_filter">
+            <table>
+                <thead>
+                    <tr>
+                        <td width="30" class="tianjia"></td>
+                        <td width="30" class="fang"></td>
+                        <td class="mW100 tableHead lv_data_textfield">
+                            <a href="#">主题</a>
+                        </td>
+                        <td class="mW100 tableHead lv_data_textfield">
+                            <a href="#">活动类型</a>
+                        </td>
+                        <td class="mW100 tableHead lv_data_textfield">
+                            <a href="#">到期时间</a>
+                        </td>
+                        <td class="mW100 tableHead lv_data_textfield">
+                            <a href="#">状态</a>
+                        </td>
+                        <td class="mW100 tableHead lv_data_textfield">
+                            <a href="#">优先级</a>
+                        </td>
+                        <td class="mW100 tableHead lv_data_textfield">
+                            <a href="#">关联到</a>
+                        </td>
+                        <td class="mW100 tableHead lv_data_textfield">
+                            <a href="#">联系人姓名</a>
+                        </td>
+                        <td class="mW100 tableHead lv_data_textfield">
+                            <a href="#">活动所有者</a>
+                        </td>
+                        <td width="30"></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td width="30" class="tianjia1"></td>
+                        <td width="30" class="fang1"></td>
+                        <td class="mW1001 tableHead1 lv_data_textfield1 ">
+                            <a href="#" class="tableHead1">给商机客户打电话</a>
+                        </td>
+                        <td class="mW1001 tableHead1 lv_data_textfield1 ">
+                            <a href="#" class="visited1">任务</a>
+                        </td>
+                        <td class="mW1001 tableHead1 lv_data_textfield1 ">
+                            <a href="#">2018-12-05</a>
+                        </td>
+                        <td class="mW1001 tableHead1 lv_data_textfield1 ">
+                            <a href="#">完成</a>
+                        </td>
+                        <td class="mW1001 tableHead1 lv_data_textfield1 ">
+                            <a href="#">最高</a>
+                        </td>
+                        <td class="mW1001 tableHead1 lv_data_textfield1 ">
+                            <a href="#" class="tableHead1">吉祥如意餐饮</a>
+                        </td>
+                        <td class="mW1001 tableHead1 lv_data_textfield1 ">
+                            <a href="#" class="tableHead1">张舒鹏</a>
+                        </td>
+                        <td class="mW1001 tableHead1 lv_data_textfield1 ">
+                            <a href="#">对对对</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- 底部聊天 -->
+    <div class="bottom"></div>
+</body>
+
+</html>
+<script type="text/javascript" src="http://g.alicdn.com/sj/lib/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/artTemplate.js/3.0.1/template.js"></script>
+<script type="text/javascript" src="zsp_js/index.js"></script>
+<script type="text/html" id="test">
+    {{if code==200}}
+        {{each data}}
+        <tr>
+            <td width="30" class="tianjia1"></td>
+            <td width="30" class="fang1"></td>
+            <td class="mW1001 tableHead1 lv_data_textfield1 ">
+                <a href="#" class="tableHead1">{{$value.主题}}</a>
+            </td>
+            <td class="mW1001 tableHead1 lv_data_textfield1 ">
+                <a href="#" class="visited1">{{$value.活动类型}}</a>
+            </td>
+            <td class="mW1001 tableHead1 lv_data_textfield1 ">
+                <a href="#">{{$value.到期时间}}</a>
+            </td>
+            <td class="mW1001 tableHead1 lv_data_textfield1 ">
+                <a href="#">{{$value.状态}}</a>
+            </td>
+            <td class="mW1001 tableHead1 lv_data_textfield1 ">
+                <a href="#">{{$value.优先级}}</a>
+            </td>
+            <td class="mW1001 tableHead1 lv_data_textfield1 ">
+                <a href="#" class="tableHead1">{{$value.关联到}}</a>
+            </td>
+            <td class="mW1001 tableHead1 lv_data_textfield1 ">
+                <a href="#" class="tableHead1">{{$value.联系人姓名}}</a>
+            </td>
+            <td class="mW1001 tableHead1 lv_data_textfield1 ">
+                <a href="#">{{$value.活动所有者}}</a>
+            </td>
+        </tr>
+        {{/each}}
+        {{else}}
+        <li>暂无记录</li>
+    {{/if}}
+</script>
+<script>
+    var a = true;
+    span_fu.onclick = function () {
+        if (a) {
+            xlcd.style.display = "block";
+            a = false;
+        } else {
+            xlcd.style.display = "none";
+            a = true;
+        }
+    }
+    $.ajax({
+        url: "zsp_php/api1.php",
+        type: "POST",
+        dataType: "json",
+        success: function (data) {
+            console.log(data);
+            var html = template("test", data);
+            $('tbody').html(html);
+        },
+    });
+    $(".check_box").change(function () {
+        var check = $(this).is(":checked");
+        console.log(check);
+        if (check == true) {
+            $(this).next().next().slideDown("slow");
+            $('#filters').show();
+            // $('.down').css('display', 'block');
+        } else {
+            $(this).next().next().slideUp("slow");
+            // $('.down').css('display', 'none');
+            $('#filters').hide();
+        }
+    })
+    $('.mt12').on('click', function () {
+        $('#filter').show();
+        $('.mt12').hide();
+    });
+</script>
